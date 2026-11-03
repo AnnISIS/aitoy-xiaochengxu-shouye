@@ -1,0 +1,311 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;       
+  }
+  to {
+    opacity: 1;      
+  }
+}
+
+.wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 45%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 48rpx;
+  overflow: hidden;
+  z-index: 10001;
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.close {
+  position: absolute;
+  right: 4%;
+  top: 30%;
+  width: 9vw;
+  height: 9vw;
+  background: transparent;
+  border: none;
+  font-size: 48rpx;
+  color: #fff;
+  z-index: 10001;
+}
+
+.flowerLight {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 64vw;
+  height: auto;
+  aspect-ratio: 460/900;
+  z-index: 10001;
+  pointer-events: none;
+}
+
+.flowerImage {
+  position: absolute;
+  left: 50%;
+  bottom: 18%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 64vw;
+  height: auto;
+  aspect-ratio: 430/560;
+  z-index: 10002;
+  pointer-events: none;
+}
+
+.contentArea {
+  position: absolute;
+  left: 50%;
+  bottom: 15%;
+  transform: translate(-50%);
+  width: 95%;
+  height: inherit;
+  z-index: 10004;
+}
+
+.flowerFrontWrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 10%;  
+  width: 65%;
+  height: auto;
+  aspect-ratio: 360/110;
+}
+
+.flowerFront {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.flowerNameContainer {
+  position: absolute;
+  left: 43%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.flowerNameChar {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  font-family: var(--font-family, PingFang SC);
+  font-weight: 600;
+  font-size: var(--font-size, 40rpx);
+  color: #2d2d2d;
+  transform-origin: center center;
+  transform: translate(var(--char-x), var(--char-y)) rotate(var(--char-rotate));
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20rpx;
+}
+
+.titleDecoration {
+  width: 40rpx;
+  height: 40rpx;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  margin: 0 16rpx;
+}
+
+.title {
+  font-family: PingFang SC;
+  font-weight: 600;
+  font-size: 36rpx;
+  color: #2d2d2d;
+  text-align: center;
+}
+
+.description {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%);
+  width: 100%;
+  font-family: PingFang SC;
+  font-weight: regular;
+  font-size: 28rpx;
+  color: #2d2d2d;
+  text-align: center;
+}
+
+.progressContainer {
+  position: absolute;
+  left: 50%;
+  bottom: -18%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.percentBubble {
+  position: absolute;
+  bottom: 70%;
+  margin-bottom: 16rpx;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  display: inline-block;
+  pointer-events: none;
+  z-index: 10005;
+}
+
+.percentBubbleImg {
+  width: 12vw;
+  height: auto;
+  aspect-ratio: 100/79;
+  display: block;
+}
+
+.percentText {
+  position: absolute;
+  left: 50%;
+  top: 43%;
+  transform: translate(-50%, -50%);
+  width: 22vw;
+  text-align: center;
+  font-family: PingFang SC;
+  font-weight: 600;
+  font-size: 28rpx;
+  color: #2d2d2d;
+}
+
+.progressTrackWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10rpx;
+}
+
+.progressTrack {
+  flex: 1;
+  max-width: 100%;
+  height: 18vw;
+  width: 98%;
+  border-radius: 1998rpx;
+  overflow: visible;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff59;
+  border: 4rpx solid #ffffff;
+}
+
+.progressClip {
+  position: absolute;
+  left: 2rpx;
+  right: 2rpx;
+  top: 2rpx;
+  bottom: 2rpx;
+  border-radius: 1998rpx;
+  overflow: hidden;
+}
+
+.progressFill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  border-top-left-radius: 1998rpx;
+  border-bottom-left-radius: 1998rpx;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: width 0.3s ease;
+}
+
+// Real Flower styles
+.progressFillReal {
+  background: #AAE8FF;
+  backdrop-filter: blur(40rpx);
+  opacity: 0.4;
+}
+
+// Brave Flower styles
+.progressFillBrave {
+  background: #F8C0FF;
+  ;
+  backdrop-filter: blur(40rpx);
+  opacity: 0.4;
+}
+
+// Aware Flower styles
+.progressFillAware {
+  background: #FFCAAF;
+  backdrop-filter: blur(40rpx);
+  opacity: 0.4;
+}
+
+// Action Flower styles
+.progressFillAction {
+  background: #7DEBDC;
+  backdrop-filter: blur(40rpx);
+  opacity: 0.4;
+}
+
+// Caring Flower styles
+.progressFillCaring {
+  background: #FFA4AC;
+  backdrop-filter: blur(40rpx);
+  opacity: 0.4;
+}
+
+.fullPercent {
+  position: absolute;
+  right: 48rpx;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: PingFang SC;
+  font-weight: 600;
+  font-size: 36rpx;
+  color: #2d2d2d;
+  z-index: 10;
+  white-space: nowrap;
+}
+
+.zeroPercent {
+  position: absolute;
+  left: 48rpx;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: PingFang SC;
+  font-weight: 600;
+  font-size: 36rpx;
+  color: #2d2d2d;
+  z-index: 10;
+  white-space: nowrap;
+}
+
+
+.mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
+}

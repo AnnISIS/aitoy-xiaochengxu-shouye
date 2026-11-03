@@ -1,0 +1,122 @@
+.bg_color{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to top,#eeecff,#f4e8f6,#f9e6f3,#fde9f1,#fdeaf0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hint{
+    position:absolute;
+    bottom: 15%;
+    left:50%;
+    transform: translate(-50%);
+    font-size:20rpx;
+    color:#a9a6a6;
+}
+
+.NoFriednBg{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.BrokenHeart{
+    height: 10vw;
+    width: 10vw;
+}
+
+.NoFriendBall{
+    width: 47vw;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    margin: 0 0 40rpx;
+}
+
+.NoFriendText1{
+    font-family: PingFang SC;
+    font-weight: 600;
+    font-size: 28rpx;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    color:#333333;
+    margin-bottom: 16rpx;
+}
+
+.NoFriendText2{
+    width: 100%;
+    font-family: PingFang SC;
+    font-weight: 400;
+    font-size: 28rpx;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    color:#333333;
+}
+
+/* 顶部导航栏 */
+.navbar{
+  position: fixed;
+  top: 6%;
+  left: 0;
+  right: 0;
+  height: 88rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 44rpx;
+  background: transparent;
+  z-index: 1000;
+}
+
+.nav_back_button{
+  width: 88rpx;
+  height: 88rpx;
+  padding: 0;
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_back_icon{
+  width: 88rpx;
+  height: 88rpx;
+  object-fit: contain;
+}
+
+.nav_title{
+  font-size: 36rpx;
+  font-weight: 500;
+  font-family: 'PingFang SC';
+  color: #2d2d2d;
+  letter-spacing: 0px;
+}
+
+.nav_placeholder{
+  width: 88rpx;
+  height: 88rpx;
+}
+
+.home_bg_image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  object-position: top left;
+}

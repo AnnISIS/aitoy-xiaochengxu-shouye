@@ -1,0 +1,20 @@
+{
+  "name": "通用 SDM 模板",
+  "type": "panel-app",
+  "ownerType": "tuya-official",
+  "i18n": false,
+  "miniprogramRoot": "./dist/tuya",
+  "publicRoot": "cdn/",
+  "dependencies": {
+    "BaseKit": "3.11.0",
+    "MiniKit": "3.1.0",
+    "DeviceKit": "4.9.0",
+    "BizKit": "4.2.0"
+  },
+  "baseversion": "2.29.14",
+  "devMode": "ray",
+  "compileType": "miniprogram",
+  "projectname": "aitoy",
+  "description": "",
+  "remoteDebug": "mqtt"
+}

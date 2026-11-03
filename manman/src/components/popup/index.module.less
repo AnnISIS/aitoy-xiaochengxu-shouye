@@ -1,0 +1,120 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;        
+  }
+  to {
+    opacity: 1;        
+  }
+}
+
+.container{
+  position:absolute;
+  left:50%;
+  top:40%;
+  transform:translate(-50%,-50%);
+  width:75%;
+  height:45%;
+  background:linear-gradient(to top,#ffffff,#ecf2fe,#deeafe);
+  border-radius:40rpx;
+  z-index:10000;
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.ball{
+  position:absolute;
+  left:48%;
+  top:10%;
+  transform: translate(-50%);
+  width:40%;
+  height:35%;
+}
+
+.name{
+  position:absolute;
+  top:40%;
+  left:50%;
+  transform: translate(-50%);
+  font-size:38rpx;
+  font-weight: bold;
+}
+
+.meet_time{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%);
+  width: 25%;
+  height: 7%;
+  border:4rpx solid #7ab4ff;
+  border-radius: 9999px;
+  background:transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meet_time_font{
+  color:#7ab4ff;
+  font-size:22rpx;
+}
+
+.first_meet{
+  position: absolute;
+  width: 100%;
+  top:63%;
+  left:50%;
+  transform: translate(-50%);
+  text-align: center;
+  font-size:24rpx;
+  color:#989899;
+}
+
+.lately_meet{
+  position: absolute;
+  width: 100%;
+  top:69%;
+  left:50%;
+  transform: translate(-50%);
+  text-align: center;
+  font-size:24rpx;
+  color:#989899;
+}
+
+.close{
+  position:absolute;
+  right:10rpx;
+  top:-20rpx;
+  width:5%;
+  height:15%;
+  background:transparent;
+  font-size:60rpx;
+  font-weight: 100;
+  text-align: center;
+  color:#b0aeae;
+}
+
+.send{
+  position: absolute;
+  left:50%;
+  bottom:7%;
+  transform: translate(-50%);
+  border-radius:9999px;
+  font-size:30rpx;
+  color:white;
+  background-color: #81b3f8;
+  width: 45%;
+  height: 11%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 100;
+}
+
+.mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color:black ;
+  opacity: 0.8;
+  }

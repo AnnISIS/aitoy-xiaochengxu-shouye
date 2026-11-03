@@ -1,0 +1,146 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;       
+  }
+  to {
+    opacity: 1;      
+  }
+}
+
+.container{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  width: auto;
+  height: 50%;
+  aspect-ratio: 593/723;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius:40rpx;
+  z-index:10000;
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.topImage{
+  position:absolute;
+  top:26%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width:58%;
+  height:auto;
+  aspect-ratio: 340/124;
+  z-index:100002;
+}
+
+.ball{
+  position:absolute;
+  left:50%;
+  top:21%;
+  transform: translate(-50%);
+  width: 21vw;
+  height:21vw;
+  z-index:100003;
+}
+
+.close{
+  position:absolute;
+  right:4%;
+  top:30%;
+  width:9vw;
+  height:9vw;
+  background:transparent;
+  border:none;
+  z-index:100001;
+}
+
+.name{
+  position:absolute;
+  top:44%;
+  left:50%;
+  transform: translate(-50%);
+  font-family: PingFang SC;
+  font-weight: 600;
+  font-size: 28rpx;
+  color:#2d2d2d;
+}
+
+.distant_font{
+  position: absolute;
+  left:50%;
+  top:52%;
+  width: 100%;
+  transform: translate(-50%);
+  color:#FF87CF;
+  font-family: PingFang SC;
+  font-weight: 600;
+  font-size: 26rpx;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.messageBox{
+  position: absolute;
+  top:61%;
+  left:50%;
+  transform: translate(-50%);
+  min-width: 28%;
+  max-width: 80%;
+  min-height: 13%;
+  max-height: 45%;
+  border-radius: 0 40rpx 40rpx 40rpx;
+  border:2rpx solid #ffffff;
+  background-color: #fcfcfc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30rpx 40rpx;
+  overflow-y: auto;
+}
+
+.information{
+  font-family: PingFang SC;
+  font-weight: 500;
+  font-size:28rpx;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #2d2d2d;
+  word-break: break-word;
+  text-align: center;
+  white-space: pre-wrap;
+}
+
+.reply_btn{
+  position: absolute;
+  left:50%;
+  bottom: 5%;
+  transform: translate(-50%);
+  width: 70%;
+  height: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#2d2d2d;
+  background-color: #FFADDE;
+  border-radius: 9999px;
+  font-family: PingFang SC;
+  font-weight: 600;
+  font-size: 34rpx;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color:black ;
+  opacity: 0.8;
+}
+

@@ -1,0 +1,261 @@
+.bgimg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // background: linear-gradient(to bottom,#c95575,#8478a3,#b0a9cc)
+}
+
+@keyframes fadeIn1 {
+    from {
+      opacity: 0;        
+    }
+    to {
+      opacity: 1;          
+    }
+}
+
+.FlowerContainer{
+    position:absolute;
+    bottom:2%;
+    left:50%;
+    transform: translate(-50%);
+    width: 100%;
+    height:46%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;        
+      transform: translateX(400rpx); 
+    }
+    to {
+      opacity: 1;        
+      transform: translateX(0);    
+    }
+}
+
+.box{
+    height:18%;
+    width: 90%;
+    position:relative;
+    background: #f6f8fc;
+    border-radius: 20rpx;
+    animation: fadeIn 0.5s ease-out forwards; 
+}
+
+.FlowerBtn{
+    position:absolute;
+    left:5%;
+    top:50%;
+    transform: translate(0,-50%);
+    width: 13vw;
+    height:13vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.FlowerImg{
+    height: 100%;
+    width: 100%;
+}
+
+.FlowerName{
+    position:absolute;
+    left:20%;
+    top:25%;
+    font-family: PingFang SC;
+    font-weight: 500;
+    font-size: 30rpx;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #2D2D2D;
+}
+
+.FlowerContent{
+    position:absolute;
+    left:20%;
+    top:55%;
+    font-size:22rpx;
+    color:#a6a7a8;
+}
+
+.FlowerPercent{
+    position:absolute;
+    right:3%;
+    top:50%;
+    transform: translate(0,-50%);
+    width: 18vw;
+    height: 7vw;
+    border-radius: 999px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.FlowerPercentTrack{
+    position: absolute;
+    left: 2rpx;
+    right: 2rpx;
+    top: 2rpx;
+    bottom: 2rpx;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.FlowerPercentFill{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    // 为 Caring Flower 的动画添加平滑过渡
+    transition: width 0.15s ease-out, border-top-right-radius 0.15s ease-out, border-bottom-right-radius 0.15s ease-out;
+}
+
+.FlowerPercentText{
+    position: relative;
+    font-size: 24rpx;
+    font-weight: 500;
+    color: #2d2d2d;
+}
+
+.FlowerPercentTextLight{
+    position: relative;
+    font-size: 24rpx;
+    font-weight: 500;
+    color: #a6a7a8;
+}
+
+// Real Flower styles
+.FlowerPercentReal {
+    background: rgba(125, 185, 255, 0.2);
+    border: 2rpx solid rgba(125, 185, 255, 0.2);
+}
+
+.FlowerPercentFillReal {
+    background: #7DB9FF;
+}
+
+// Brave Flower styles
+.FlowerPercentBrave {
+    background: rgba(217, 147, 212, 0.2);
+    border: 2rpx solid rgba(217, 147, 212, 0.2);
+}
+
+.FlowerPercentFillBrave {
+    background: #D993D4;
+}
+
+// Aware Flower styles
+.FlowerPercentAware {
+    background: rgba(255, 184, 107, 0.2);
+    border: 2rpx solid rgba(255, 184, 107, 0.2);
+}
+
+.FlowerPercentFillAware {
+    background: #FFB86B;
+}
+
+// Action Flower styles
+.FlowerPercentAction {
+    background: rgba(131, 224, 197, 0.2);
+    border: 2rpx solid rgba(131, 224, 197, 0.2);
+}
+
+.FlowerPercentFillAction {
+    background: #83E0C5;
+}
+
+// Caring Flower styles
+.FlowerPercentCaring {
+    background: rgba(255, 164, 172, 0.2);
+    border: 2rpx solid rgba(255, 164, 172, 0.4);
+}
+
+.FlowerPercentFillCaring {
+    background: #FFA4AC;
+}
+
+.touch{
+    position:absolute;
+    height: 70vw;
+    width: 19vw;
+    background:transparent;
+}
+
+.version{
+    position:absolute;
+    top:6%;
+    left:75%;
+    transform: translate(-50%);
+    z-index: 3000;
+    color: #c2c3c6;
+    padding-top: 0px;
+}
+
+.CheckVersion{
+    position:absolute;
+    top:5%;
+    left:50%;
+    transform: translate(-50%);
+    height: 8%;
+    width: 30%;
+    z-index: 3000;
+}
+
+/* 顶部导航栏 */
+.navbar{
+  position: fixed;
+  top: 6%;
+  left: 0;
+  right: 0;
+  height: 88rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 44rpx;
+  background: transparent;
+  z-index: 1000;
+}
+
+.nav_back_button{
+  width: 88rpx;
+  height: 88rpx;
+  padding: 0;
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_back_icon{
+  width: 88rpx;
+  height: 88rpx;
+  object-fit: contain;
+}
+
+.nav_title{
+  font-size: 36rpx;
+  font-weight: 500;
+  font-family: 'PingFang SC';
+  color: #2d2d2d;
+  letter-spacing: 0px;
+}

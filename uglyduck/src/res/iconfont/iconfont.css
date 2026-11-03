@@ -1,0 +1,179 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 5004205 */
+  src: url('iconfont.woff2?t=1756188126454') format('woff2'),
+       url('iconfont.woff?t=1756188126454') format('woff'),
+       url('iconfont.ttf?t=1756188126454') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+  
+.icon-battery-30:before {
+  content: "\e631";
+}
+
+.icon-battery10:before {
+  content: "\e60e";
+}
+
+.icon-battery0:before {
+  content: "\e60f";
+}
+
+.icon-battery50:before {
+  content: "\e610";
+}
+
+.icon-battery-70:before {
+  content: "\e611";
+}
+
+.icon-battery70:before {
+  content: "\e6d9";
+}
+
+.icon-battery100:before {
+  content: "\e8bf";
+}
+
+.icon-battery30:before {
+  content: "\e623";
+}
+
+.icon-lightning:before {
+  content: "\e995";
+}
+
+.icon-lightning-full:before {
+  content: "\e996";
+}
+
+.icon-keaide:before {
+  content: "\e601";
+}
+
+.icon-aixin:before {
+  content: "\e83f";
+}
+
+.icon-aixin1:before {
+  content: "\e85c";
+}
+
+.icon-1502xiazai:before {
+  content: "\e640";
+}
+
+.icon-wechat:before {
+  content: "\e600";
+}
+
+.icon-wifi:before {
+  content: "\e7e0";
+}
+
+.icon-message1:before {
+  content: "\e652";
+}
+
+.icon-share:before {
+  content: "\e86e";
+}
+
+.icon-no-wifi:before {
+  content: "\e6cd";
+}
+
+.icon-message2:before {
+  content: "\e659";
+}
+
+.icon-edit:before {
+  content: "\e66e";
+}
+
+.icon-voice4-01:before {
+  content: "\e667";
+}
+
+.icon-voice5-01:before {
+  content: "\e668";
+}
+
+.icon-wechat-friend:before {
+  content: "\e60b";
+}
+
+.icon-image_add:before {
+  content: "\e682";
+}
+
+.icon-arrow-forward:before {
+  content: "\e612";
+}
+
+.icon-close:before {
+  content: "\e613";
+}
+
+.icon-arrow-up:before {
+  content: "\e614";
+}
+
+.icon-service:before {
+  content: "\e615";
+}
+
+.icon-save:before {
+  content: "\e616";
+}
+
+.icon-arrow-back:before {
+  content: "\e617";
+}
+
+.icon-information:before {
+  content: "\e618";
+}
+
+.icon-filter:before {
+  content: "\e619";
+}
+
+.icon-arrow-down:before {
+  content: "\e61a";
+}
+
+.icon-search:before {
+  content: "\e61b";
+}
+
+.icon-scan:before {
+  content: "\e61c";
+}
+
+.icon-more:before {
+  content: "\e61d";
+}
+
+.icon-sound-on:before {
+  content: "\e61e";
+}
+
+.icon-message:before {
+  content: "\e61f";
+}
+
+.icon-settings:before {
+  content: "\e620";
+}
+
+.icon-sound-off:before {
+  content: "\e621";
+}
+
